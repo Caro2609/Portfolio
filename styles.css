@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box;
+    font-family: 'News Cycle', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* MENU ENCABEZADO */
+.contenedor-header{
+    background: #797772;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    font-size: 36px;
+    color: #FFFFCA;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #F1E19E;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #a3a1a1;
+}
+.nav-responsive{
+    background-color: #797772;
+    color:#F1E19E;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; 
+}
+
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top,rgba(226,226,226, 0.1), rgba(226,226,226, 1)), url("https://img.freepik.com/foto-gratis/escribiendo-computadora-portatil-close-up_1163-1448.jpg?w=740&t=st=1676758330~exp=1676758930~hmac=908c1bf59d6a057969c6f3fa2ff22ffc5bf3d458f0038371266837acd4dba455");
+    background-size: cover;
+    height: 100vh;
+    color: #FFFFCA;
+    display: flex;
+    align-items: center;
+}
+.inicio .contenido-banner{
+    padding: 20px;
+    background-color: #797772;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 2px solid #F1E19E;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .contenido-banner h1{
+    margin-top: 40px;
+    font-size: 42px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+}
+.inicio .contenido-banner h2{
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.inicio .contenido-banner .redes a{
+    color: #F1E19E;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #F1E19E;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #a3a1a1;
+}
+
+/* SECCION SOBRE MI */
+.sobremi{
+    background-color: #E2E2E2;
+    color: #221C00;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #221C00;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.sobremi .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    margin-bottom: 25px;
+}
+
+/* DatosPersonales */
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #797772;
+    width: 130px;
+}
+.sobremi .fila .col ul li span{
+    /* background-color: #797772; */
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Educacion */
+.sobremi .fila .col .item{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F1E19E;
+    position: relative;
+}
+.sobremi .fila .col .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.sobremi .fila .col .item .casa{
+    color: #797772;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.sobremi .fila .item .fecha{
+    display: block;
+    color: #797772;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: inline;
+}
+.sobremi .fila .col .item a i{
+    color: #797772;
+} 
+.sobremi .fila .col .item:hover{
+    background-color: #FFFFCA;
+}
+
+
+/* SECCION SKILLS */
+.skills{
+    background-color: #E2E2E2;
+    color: #221C00;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 120px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #F1E19E;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #FFFFCA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #FFFFCA;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -10px;
+    font-size: 14px;
+}
+
+/* Declaracion del movimiento mediante JS */
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 95%;}
+}
+
+.skills .skill .gitgithub{
+    width: 0%;
+    animation: 2s gitgithub forwards;
+}
+@keyframes gitgithub {
+    0%{width: 0%;}
+    100%{width: 81%;}
+}
+
+.skills .skill .nodejs{
+    width: 0%;
+    animation: 2s nodejs forwards;
+}
+@keyframes nodejs {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad forwards;
+}
+@keyframes responsabilidad {
+    0%{width: 0%;}
+    100%{width: 99%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.skills .skill .proactividad{
+    width: 0%;
+    animation: 2s proactividad forwards;
+}
+@keyframes proactividad {
+    0%{width: 0%;}
+    100%{width: 94%;}
+}
+
+
+/* SECCION TRABAJOS */
+
+.trabajos{
+    background-color: #E2E2E2;
+    color: #221C00;
+    padding: 50px 20px;
+}
+.trabajos .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.trabajos h2{
+    font-size: 48px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+.trabajos .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.trabajos .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.trabajos .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.trabajos .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(255,255,202, 0.8), rgba(255,255,202, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.trabajos .galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.trabajos .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.trabajos .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+} 
+
+
+/* SECCION CONTACTO */
+.contacto{
+    background-color: #E2E2E2;
+    color: #221C00;
+    padding: 50px 20px;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: Saoldisplay,'Times New Roman',sans-serif;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, 
+.contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #F1E19E;
+    color: #797772;
+    font-size: 18px;
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #797772;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #221C00;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FFFFCA;
+    z-index: -2;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+/* Imagen */
+.contacto .col img{
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+/* SECCION FOOTER */
+footer{
+    background-color: #797772;
+    color: #FFFFCA;
+    letter-spacing: 4px;
+    font-size: 11px;
+    padding: 25px 0 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    padding: 5px;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #F1E19E;
+    color: #221C00;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+} 
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #797772;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #F1E19E;
+        padding: 10px 0;
+    }
+}
+ @media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .trabajos .galeria{
+        display: block;
+        width: 100%;
+    }
+    .trabajos .galeria .proyecto{
+        max-width: 100%;
+    }
+    .trabajos .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}
